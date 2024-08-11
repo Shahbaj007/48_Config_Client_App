@@ -1,0 +1,10 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: welcome
+
+#To tell our client server, where the config server is....
+  config:
+    import: optional:configserver:http://localhost:9090
